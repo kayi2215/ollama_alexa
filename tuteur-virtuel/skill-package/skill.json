@@ -1,0 +1,33 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "fr-FR": {
+          "summary": "Un tuteur virtuel intelligent pour aider les enfants dans leurs devoirs",
+          "examplePhrases": [
+            "Alexa, lance Tuteur Virtuel",
+            "Aide-moi avec mes devoirs",
+            "Je veux faire un quiz"
+          ],
+          "keywords": [
+            "éducation",
+            "devoirs",
+            "apprentissage",
+            "quiz",
+            "tuteur"
+          ],
+          "name": "Tuteur Virtuel",
+          "description": "Un assistant pédagogique intelligent qui aide les enfants avec leurs devoirs, propose des quiz éducatifs et des explications adaptées."
+        }
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "Dites 'Alexa, lance Tuteur Virtuel' pour commencer.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": ["FR"]
+    },
+    "apis": {
+      "custom": {}
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "tuteur virtuel",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelpHomeworkIntent",
+          "slots": [
+            {
+              "name": "subject",
+              "type": "SUBJECT"
+            },
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "aide-moi avec {subject}",
+            "j'ai besoin d'aide en {subject}",
+            "peux-tu m'aider avec {question}",
+            "je ne comprends pas {question}",
+            "explique-moi {question}"
+          ]
+        },
+        {
+          "name": "QuizIntent",
+          "slots": [
+            {
+              "name": "subject",
+              "type": "SUBJECT"
+            }
+          ],
+          "samples": [
+            "je veux faire un quiz",
+            "lance un quiz de {subject}",
+            "teste mes connaissances en {subject}",
+            "faisons un quiz"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "SUBJECT",
+          "values": [
+            {
+              "name": {
+                "value": "mathématiques",
+                "synonyms": ["maths", "mathématique"]
+              }
+            },
+            {
+              "name": {
+                "value": "français",
+                "synonyms": ["grammaire", "conjugaison", "orthographe"]
+              }
+            },
+            {
+              "name": {
+                "value": "histoire",
+                "synonyms": ["histoire-géo", "histoire géographie"]
+              }
+            },
+            {
+              "name": {
+                "value": "sciences",
+                "synonyms": ["svt", "physique", "chimie", "biologie"]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
